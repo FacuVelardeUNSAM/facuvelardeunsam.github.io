@@ -1,0 +1,95 @@
+body {
+  font-family: 'Shantell Sans', cursive;
+}
+
+.container-sm {
+    height: 100vh;
+}
+section {
+    min-height: 80%;
+}
+
+nav {
+    min-height: 10%;
+    /*background-color: #ebebee;*/
+    font-size: 20px;
+}
+
+.footer {
+    min-height: 10%;
+    border-radius: 0px;
+    bottom: 0;
+    border: 0;
+}
+
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    list-style: none;
+    padding-left: 0;
+  }
+
+.ft-social-list li {
+    margin: 1.5% 2% 1.5% 2%;
+    font-size: 30px;
+  }
+
+footer a {
+    text-decoration: none;
+    color: rgb(175, 168, 168);
+  }
+
+footer ul {
+  margin: 0px;
+}
+
+a:hover {
+    text-decoration: underline;
+  }
+
+img {
+    width: 200px;
+	  height: 200px;
+	  border-radius: 50%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  opacity: 0.7;
+  background-color: #0c0a0a;
+  color: #fdfdfd;
+}
+
+#resumen {
+  background-image: url("../images/fondo_perfil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  font-size: 25px;
+}
+
+#resumen p {
+  font-size: 22px;
+  opacity: 0.7;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#contenido {
+  background-image: url(../images/sushi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  font-size: 20px;
+}
+
+#contenido p, #contenido ul {
+  opacity: 0.8;
+  background-color: #0c0a0a;
+  color: #ffffff;
+}
+
+

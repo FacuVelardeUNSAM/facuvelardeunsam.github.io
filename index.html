@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Curriculum</title>
+</head>
+<script>
+  async function  onLoad(url){
+    document.getElementById("page").innerHTML= await (await fetch(url)).text();
+  }
+</script>
+
+<body class="bg-dark" onload="onLoad('html/inicio.html')">
+  <div class="container-sm">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a role="button" onclick="onLoad('html/inicio.html')" class="navbar-brand">Inicio</a>
+          <button id="despliegue" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a role="button" class="nav-link"  onclick="onLoad('html/sobre_mi.html');collapse()">Sobre mi</a>
+              </li>    
+              <li class="nav-item">
+                <a role="button" class="nav-link" onclick="onLoad('html/edu_exp.html');collapse()">Educación y experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link" onclick="onLoad('html/hab_leng.html');collapse()">Habilidades y lenguajes</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link" onclick="onLoad('html/metas_inter.html');collapse()">Metas e intereses</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section class="row row-cols-sm-2 row-cols-1 mx-0 align-items-ms-stretch">
+      <div id="resumen" class="col col-sm-4">
+        <img class="mx-auto d-block" src="images/Foto_perfil.jpg" alt="Fotografía de perfil Juan Pérez">
+        <p>
+          <u>Nombre:</u> Juan Pérez. <br>
+          <u>Dirección:</u> Av. Corrientes 1234, Buenos Aires, Argentina. <br>
+          <u>Teléfono:</u> +54 11 1234 5678. <br>
+          <u>Email:</u> juanperez@email.com
+        </p>
+      </div>
+      <div id="contenido" class="col col-sm-8 bg-light"></div>
+    </section>
+    <footer class="card bg-dark footer">
+      <ul class="ft-social-list">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </footer>
+    
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js" ></script>  
+  <script src="https://kit.fontawesome.com/ea4a500447.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
